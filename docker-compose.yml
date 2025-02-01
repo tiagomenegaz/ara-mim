@@ -19,23 +19,23 @@ services:
     environment:
       DATABASE_URL: postgres://photo_app:secret@db:5432/photo_app_development
 
-  client-react:
-    build: ./client-react
-    ports:
-      - "3001:3000"
-    environment:
-      - REACT_APP_API_URL=http://api:3000
-    depends_on:
-      - api
+  # client-react:
+  #   build: ./client-react
+  #   ports:
+  #     - "3001:3000"
+  #   environment:
+  #     - REACT_APP_API_URL=http://api:3000
+  #   depends_on:
+  #     - api
 
-  client-vue:
-    build: ./client-vue
-    ports:
-      - "3002:8080"
-    environment:
-      - VUE_APP_API_URL=http://api:3000
-    depends_on:
-      - api
+  # client-vue:
+  #   build: ./client-vue
+  #   ports:
+  #     - "3002:8080"
+  #   environment:
+  #     - VUE_APP_API_URL=http://api:3000
+  #   depends_on:
+  #     - api
 
 volumes:
   postgres_data:
