@@ -28,6 +28,16 @@ services:
       - .:/rails
     command: ["./api/bin/rails", "server"]
 
+  client-vue:
+    build: ./client-vue
+    container_name: vue_client
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    volumes:
+      - ./client-vue:/app
+
 volumes:
   postgres_data:
     driver: local
