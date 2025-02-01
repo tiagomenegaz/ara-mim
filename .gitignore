@@ -101,3 +101,34 @@ yarn-debug.log*
 
 # Ignore master key for decrypting credentials and more.
 /api/config/master.key
+
+# Logs
+client-vue/logs
+client-vue/*.log
+client-vue/npm-debug.log*
+client-vue/yarn-debug.log*
+client-vue/yarn-error.log*
+client-vue/pnpm-debug.log*
+client-vue/lerna-debug.log*
+
+client-vue/node_modules
+client-vue/.DS_Store
+client-vue/dist
+client-vue/dist-ssr
+client-vue/coverage
+client-vue/*.local
+
+client-vue/cypress/videos/
+client-vue/cypress/screenshots/
+
+# Editor directories and files
+client-vue/.vscode/*
+client-vue/!.vscode/extensions.json
+client-vue/.idea
+client-vue/*.suo
+client-vue/*.ntvs*
+client-vue/*.njsproj
+client-vue/*.sln
+client-vue/*.sw?
+
+client-vue/*.tsbuildinfo
