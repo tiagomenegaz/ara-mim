@@ -48,10 +48,10 @@
 ### Vue ###
 
 ### React ###
-/client-react/node_modules
-/client-react/npm-debug.log
-/client-react/Dockerfile
-/client-react/.dockerignore
-/client-react/.git
-/client-react/.gitignore
-/client-react/.env
+# /client-react/node_modules
+# /client-react/npm-debug.log
+# /client-react/Dockerfile
+# /client-react/.dockerignore
+# /client-react/.git
+# /client-react/.gitignore
+# /client-react/.env
