@@ -7,9 +7,6 @@ services:
       POSTGRES_USER: photo_app
       POSTGRES_PASSWORD: secret
 
-  redis:
-    image: redis:alpine
-
   api:
     build: ./api
     command: bash -c "rm -f tmp/pids/server.pid && rails s -p 3000 -b '0.0.0.0'"
@@ -19,10 +16,8 @@ services:
       - "3000:3000"
     depends_on:
       - db
-      - redis
     environment:
       DATABASE_URL: postgres://photo_app:secret@db:5432/photo_app_development
-      REDIS_URL: redis://redis:6379
 
   client-react:
     build: ./client-react
