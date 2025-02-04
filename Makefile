@@ -9,5 +9,8 @@ start:
 stop:
 	docker-compose down
 
-test:
-	docker-compose run api rails test
+start-react:
+	docker-compose up --build client-react
+
+start-vue:
+	docker-compose up --build client-vue
