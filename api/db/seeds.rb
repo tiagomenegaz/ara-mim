@@ -7,3 +7,17 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Category.destroy_all
+Category.create!([
+	name: "Portrait Photography",
+  name: "Event Photography",
+  name: "Commercial & Advertising Photography",
+  name: "Editorial & Documentary Photography",
+  name: "Fine Art & Conceptual Photography",
+  name: "Nature & Wildlife Photography",
+  name: "Sports & Action Photography",
+  name: "Travel & Cultural Photography",
+  name: "Scientific & Specialized Photography",
+  name: "Drone & Aerial Photography",
+])
